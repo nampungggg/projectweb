@@ -1,3 +1,4 @@
+/* ของน้ำผึ้งมี  navbar , footer */
 .navbar {
     height:80px; /* กำหนดความสูงของ navbar */
     background-color:#EB6B0A;
@@ -31,10 +32,11 @@
 }
 
 }
+/* จบnavbar */
 
 
-
-
+/* footer มี2แบบ fixfooter - อยู่ล่างหน้าจอตลอดไป
+slide footer ใช้แบบว่าอยู่ล่างเนื้อหาทั้งหมด */
 .fixfooter{
     background-color: #333;
     color: white;
@@ -118,3 +120,4 @@ footer a:hover{
     padding: 5px;
 } 
 
+/* จบ footer */
