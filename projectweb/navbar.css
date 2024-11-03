@@ -99,13 +99,11 @@ img{
     margin-bottom:20px;
 }
 
-.navbar-brand :hover{
-    transform: scale(1.1);
-}
+
 footer a:hover{
    color: #EB6B0A;
 }
-.navbar a:hover{
+.container-fluid a:hover{
     transform: scale(1.1);
 }
 .slidefooter{
