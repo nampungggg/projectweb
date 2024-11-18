@@ -1,0 +1,193 @@
+/* ของน้ำผึ้งมี  navbar , footer */
+.navbar {
+    height:80px; /* กำหนดความสูงของ navbar */
+    background-color:#EB6B0A;
+    display: flex; /* ใช้ flexbox สำหรับจัดเรียง */
+    align-items: center; /*จัดแนวกลางแนวตั้ง */
+    
+}
+.navbar-brand img {
+    height: 100px; /* ทำให้โลโก้มีความสูงเต็มที่ของ navbar */
+    width: auto; /* ให้ความกว้างของโลโก้เป็นอัตโนมัติเพื่อรักษาสัดส่วน */
+    
+
+}
+.navbar-brand {
+  position: relative; /* กำหนดตำแหน่งให้โลโก้ */
+  bottom:  -40px; /* ปรับตำแหน่งโลโก้ให้เลื่อนออกไปด้านซ้าย */
+  z-index: 10; /* ให้อยู่เหนือ navbar */
+  
+}
+
+@media screen and (max-width: 1000px) {
+
+.navbar {
+    height:auto; /* กำหนดความสูงของ navbar */
+    background-color:#EB6B0A;
+    display: flex; /* ใช้ flexbox สำหรับจัดเรียง */
+    align-items: center; /* จัดแนวกลางแนวตั้ง */
+}
+.navbar-brand img {
+    height: 50px; /* ทำให้โลโก้มีความสูงเต็มที่ของ navbar */
+    width: auto; /* ให้ความกว้างของโลโก้เป็นอัตโนมัติเพื่อรักษาสัดส่วน */
+}
+.navbar-brand {
+  position: relative; /* กำหนดตำแหน่งให้โลโก้ */
+  bottom:  -40px; /* ปรับตำแหน่งโลโก้ให้เลื่อนออกไปด้านซ้าย */
+  z-index: 10; /* ให้อยู่เหนือ navbar */
+}
+
+}
+.navbar a:hover{
+    transform: scale(1.1);
+}
+
+/* จบnavbar */
+
+
+/* footer มี2แบบ fixfooter - อยู่ล่างหน้าจอตลอดไป
+slide footer ใช้แบบว่าอยู่ล่างเนื้อหาทั้งหมด */
+.fixfooter{
+    background-color: #333;
+    color: white;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    
+    
+}
+.container {
+    padding: 5px;
+    
+
+    @media screen and (min-width : 1024px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+
+    }
+    
+   
+}
+
+.column {
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 400px;
+    @media screen and (min-width:1024px) {
+       margin-bottom: auto;
+    }
+    
+}
+.dummy_box {
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    
+}
+img{
+    width: 250px;
+    margin-bottom:20px;
+}
+
+
+footer a:hover{
+   color: #EB6B0A;
+}
+
+footer a:hover{
+    color: #EB6B0A;
+ }
+
+.slidefooter{
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    text-align: right;
+    
+    width: 100%;
+    padding: 6px;
+    
+   
+} 
+
+/* จบ footer */
+
+.offcanvas-body {
+    padding-top: 20px; /* เพิ่มช่องว่างด้านบน */
+   
+}
+
+.table2 {
+    margin-top: -20px;
+     /* กำหนดความกว้างของตาราง */
+}
+.table2 td{
+    padding: 15px; /* เพิ่ม padding ให้กับเซลล์ในตาราง */
+    border: 1px solid #ffffff; /* เพิ่มเส้นขอบให้กับตาราง */
+    text-align: left;
+    width: 30%;
+    background-color: #EB6B0A;
+    color: #ffffff;
+}
+ .table2 th{
+    border: 1px solid #EB6B0A;
+    text-align: left;
+    width: 1000px;
+    margin-left :20px;
+} 
+.starrating {
+    display: flex;
+    direction: row-reverse;
+    
+  }
+
+  .starrating input {
+    display: none;
+  }
+
+  .starrating label {
+    color: #ccc;
+    cursor: pointer;
+  }
+
+  .starrating input:checked ~ label {
+    color: #ffe600; 
+  }
+
+  .starrating label:hover,
+  .starrating label:hover ~ label {
+    color:#EB6B0A;
+  }
+
+.linecontainer {
+    display: flex;
+}
+.liner{
+    width: 90%;
+    height: 2px;
+    background-color: #000000;
+    border: none;
+}
